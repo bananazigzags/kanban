@@ -1,0 +1,25 @@
+$link-active: rgb(9, 65, 75);
+
+.header {
+  display: flex;
+  height: 8vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 75px;
+  background-color: rgb(20, 206, 150);
+  font-size: 40px;
+  font-weight: 600;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $link-active;
+    }
+
+    &:active {
+      color: $link-active;
+    }
+  }
+}
