@@ -1,0 +1,21 @@
+.taskContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+.priorityWrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.timeInfo {
+  font-size: 18px;
+  width: 60%;
+  border-bottom: 1px dashed var(--primary-accent);
+  padding-bottom: 10px;
+}

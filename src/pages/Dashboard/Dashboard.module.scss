@@ -1,9 +1,21 @@
 .dashboard {
   font-size: 30px;
   color: white;
-  padding: 30px;
+  padding: 40px 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  div {
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--primary-accent-light);
+  }
 
   a {
-    color: white;
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }

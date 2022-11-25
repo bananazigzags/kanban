@@ -1,0 +1,24 @@
+@mixin chip {
+  height: 30px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.low {
+  @include chip;
+  background-color: var(--primary-accent);
+}
+
+.medium {
+  @include chip;
+  background-color: var(--warning);
+}
+
+.high {
+  @include chip;
+  background-color: var(--danger);
+}
