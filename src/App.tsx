@@ -1,5 +1,5 @@
 import styles from "./App.module.scss";
-import { AppRoutes } from "./pages/AppRoutes";
+import { AppRoutes } from "./routes/AppRoutes";
 
 export const App = () => {
   return <AppRoutes />;

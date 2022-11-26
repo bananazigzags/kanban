@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router";
 import { Header } from "../components";
-import { Board } from "./Board/Board";
-import { Dashboard } from "./Dashboard/Dashboard";
+import { Board, Dashboard } from "../pages/";
 
 export const AppRoutes = () => {
   return (
