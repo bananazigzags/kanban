@@ -1,3 +1,8 @@
+.task {
+  width: 100%;
+  flex-grow: 1;
+}
+
 .taskContent {
   display: flex;
   flex-direction: column;
@@ -10,7 +15,7 @@
 
 .priorityWrapper {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .timeInfo {
@@ -18,4 +23,32 @@
   width: 60%;
   border-bottom: 1px dashed var(--primary-accent);
   padding-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.filePicker {
+  display: none;
+}
+
+@mixin icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.attachIcon {
+  @include icon;
+}
+
+.editIcon {
+  @include icon;
+  stroke: var(--primary-accent-light);
+  path {
+    fill: var(--primary-accent-light);
+  }
 }

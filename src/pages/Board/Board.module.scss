@@ -3,10 +3,18 @@
   color: white;
   padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 10px;
   height: 85vh;
-  width: 80%;
-  margin: auto;
+
+  @media (min-width: 961px) {
+    width: 80%;
+    margin: auto;
+  }
+
+  @media (min-width:1281px) {
+    font-size: 28px;
+  }
 }
 
 .boardName {
@@ -27,6 +35,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.colContent {
+  width: 100%;
+  height: 100vh;
 }
 
 .colName {

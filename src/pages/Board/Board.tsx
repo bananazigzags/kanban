@@ -62,7 +62,7 @@ export const Board = () => {
             return (
               <div className={styles.column}>
                 <h2 className={styles.colName}>{column.name}</h2>
-                <div style={{ margin: 8 }}>
+                <div className={styles.colContent}>
                   <Droppable droppableId={id} key={id}>
                     {(provided, snapshot) => {
                       return (
@@ -74,7 +74,7 @@ export const Board = () => {
                               ? "lightblue"
                               : "lightgrey",
                             padding: 4,
-                            width: 350,
+                            // width: 350,
                             minHeight: 500,
                           }}
                         >
